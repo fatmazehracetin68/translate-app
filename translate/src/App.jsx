@@ -41,10 +41,10 @@ function App() {
   const handleSwap = () => {
     setSourceLang(targetLang);
     setTargetLang(sourceLang);
-  };
 
-  // setText(translateState.answer);
-  // dispatch(setAnswer(text));
+    setText(translateState.answer);
+    dispatch(setAnswer(text));
+  };
 
   return (
     <div className="bg-zinc-900 h-screen text-white grid place-items-center">
